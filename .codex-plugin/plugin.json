@@ -1,0 +1,28 @@
+{
+  "name": "chdb",
+  "version": "0.1.0",
+  "description": "In-process ClickHouse SQL + DataStore for AI agents. Run SQL or pandas-style queries on parquet, csv, S3, Postgres, MongoDB, ClickHouse Cloud, Iceberg, and Delta Lake without a server.",
+  "homepage": "https://chdb.io",
+  "license": "Apache-2.0",
+  "category": "external-integrations",
+  "keywords": [
+    "sql",
+    "olap",
+    "clickhouse",
+    "chdb",
+    "pandas",
+    "datastore",
+    "parquet",
+    "s3",
+    "federation",
+    "analytics"
+  ],
+  "skills": [
+    "../plugins/chdb/skills/chdb-datastore",
+    "../plugins/chdb/skills/chdb-sql"
+  ],
+  "mcp_servers": [
+    "../plugins/chdb/mcp/chdb-mcp.json"
+  ],
+  "agents_md": "../plugins/chdb/AGENTS.md"
+}

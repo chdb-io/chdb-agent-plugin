@@ -1,0 +1,29 @@
+{
+  "name": "chdb-agent-plugin",
+  "owner": {
+    "name": "chDB",
+    "url": "https://chdb.io"
+  },
+  "plugins": [
+    {
+      "name": "chdb",
+      "source": "./plugins/chdb",
+      "description": "In-process ClickHouse SQL + DataStore for AI agents. Run analytical SQL or pandas-style queries on parquet, csv, S3, Postgres, MongoDB, ClickHouse Cloud, Iceberg, and Delta Lake — no server, no ETL.",
+      "version": "0.1.0",
+      "category": "external-integrations",
+      "keywords": [
+        "sql",
+        "olap",
+        "clickhouse",
+        "chdb",
+        "pandas",
+        "datastore",
+        "parquet",
+        "s3",
+        "federation",
+        "analytics"
+      ],
+      "homepage": "https://chdb.io"
+    }
+  ]
+}
