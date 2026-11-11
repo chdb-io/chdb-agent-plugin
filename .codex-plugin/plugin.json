@@ -1,10 +1,14 @@
 {
   "name": "chdb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "In-process ClickHouse SQL + DataStore for AI agents. Run SQL or pandas-style queries on parquet, csv, S3, Postgres, MongoDB, ClickHouse Cloud, Iceberg, and Delta Lake without a server.",
+  "author": {
+    "name": "chDB team",
+    "url": "https://github.com/chdb-io"
+  },
   "homepage": "https://chdb.io",
+  "repository": "https://github.com/chdb-io/chdb-agent-plugin",
   "license": "Apache-2.0",
-  "category": "external-integrations",
   "keywords": [
     "sql",
     "olap",
@@ -17,12 +21,20 @@
     "federation",
     "analytics"
   ],
-  "skills": [
-    "../plugins/chdb/skills/chdb-datastore",
-    "../plugins/chdb/skills/chdb-sql"
-  ],
-  "mcp_servers": [
-    "../plugins/chdb/mcp/chdb-mcp.json"
-  ],
-  "agents_md": "../plugins/chdb/AGENTS.md"
+  "skills": "./plugins/chdb/skills/",
+  "interface": {
+    "displayName": "chDB",
+    "shortDescription": "In-process ClickHouse SQL and pandas-style analytics",
+    "longDescription": "Query local files, pandas DataFrames, cloud storage, and remote databases with ClickHouse SQL or a pandas-compatible DataStore API, running in-process with no server.",
+    "developerName": "chDB team",
+    "category": "Developer Tools",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://chdb.io",
+    "defaultPrompt": [
+      "Use chDB to run SQL on this parquet file.",
+      "Use chDB DataStore to speed up this pandas analysis."
+    ],
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg"
+  }
 }

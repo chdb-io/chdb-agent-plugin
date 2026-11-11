@@ -1,6 +1,6 @@
 {
   "name": "chdb",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "chDB — embedded ClickHouse SQL and pandas-style DataStore for Python agents",
   "homepage": "https://chdb.io",
   "license": "Apache-2.0",
@@ -13,9 +13,6 @@
   "skills": [
     "./skills/chdb-datastore",
     "./skills/chdb-sql"
-  ],
-  "mcp_servers": [
-    "./mcp/chdb-mcp.json"
   ],
   "agents_md": "./AGENTS.md"
 }
